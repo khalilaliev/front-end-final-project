@@ -1,0 +1,57 @@
+body {
+	font-family: 'Montserrat';
+	font-weight: 400;
+}
+
+.wrapper {
+	background: $gradient-supersoft;
+}
+
+.container {
+	padding: 0 30px;
+	// від 0 до бескінечності
+
+	@include viewport-md {
+		// від 768 >
+		max-width: 708px;
+		margin: 0 auto;
+	}
+
+	@include viewport-lg {
+		// від 1024 >
+		max-width: 964px;
+	}
+
+	@include viewport-xl {
+		// від 1440 >
+		max-width: 1380px;
+	}
+
+	// @include viewport-xll {
+	// 	max-width: 1660px;
+	// } буде однаковий з кодом нижче
+
+	@media screen and (min-width: $breakpoint-xxl) {
+		// від 1920 >
+		max-width: 1660px;
+	}
+}
+
+.main-title {
+	@include title;
+}
+
+.dotted {
+	display: none;
+	@include viewport-md {
+		display: inline-block;
+		width: 6px;
+		height: 6px;
+		border-radius: $radius-rounded;
+		background: $basic-white;
+
+		&--gray {
+			background: $text-color;
+		}
+	}
+}

@@ -1,0 +1,214 @@
+.about{
+    padding: 30px 0;
+    @include viewport-md{
+        padding: 0 0 60px 0;
+    }
+
+    &__info{
+        margin-bottom: 30px;
+        @include viewport-lg{
+            flex: 1 1 55%;
+        }
+        @include viewport-xl{
+            flex: 1 1 60%;
+        }
+        @include viewport-xxl{
+            flex: 1 1 70%;
+        }
+    }
+
+    &__info-tittle{
+        @include subtitle;
+        @include main-gradient-text;
+        margin-bottom: 30px;
+    }
+    &__info-text{
+        font-size: 19px;
+        line-height: 30px;
+        color: #000;
+        &:last-child{
+            margin-top: 20px;
+        }
+    }
+    &__static{
+        padding: 0 0 0 30px;
+        border-left: 4px solid $separator-color;
+        @include viewport-lg{
+            flex: 1 1 40%;
+        }
+        @include viewport-xl{
+            flex: 1 1 35%;
+        }
+        @include viewport-xxl{
+            flex: 1 1 30%;
+        }
+    }
+    &__static-box{
+        margin-bottom: 40px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        background: url('/images/flag.svg') no-repeat 0 5px;
+        &:nth-child(2){
+            background: url('/images/bag.svg') no-repeat 0 5px;
+        }
+        &:nth-child(3){
+            background: url('/images/star.svg') no-repeat 0 5px;
+        }
+    }
+    &__static-tittle{
+        @include about;
+        @include main-gradient-text;
+        padding-left: 40px;
+        margin-bottom: 10px;
+    }
+    &__static-text{
+        font-size: 16px;
+        color: $main-color;
+        line-height: normal;
+    }
+    &__inner{
+        @include viewport-lg{
+            display: flex;
+            gap: 30px;
+        }
+        @include viewport-xl{
+            margin: 0 120px;
+        }
+    }
+}
+
+.background{
+    background: url('/images/aboutteam.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 114px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include viewport-md{
+        min-height: 233px;
+    }
+    @include viewport-lg{
+        min-height: 311px;
+    }
+    @include viewport-xl{
+        min-height: 438px;
+    }
+    @include viewport-xxl{
+        min-height: 584px;
+    }
+    &__tittle{
+        font-size: 36px;
+        color: rgba($basic-white, .80);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 13px;
+
+        @include viewport-md{
+            font-size: 46px;
+            letter-spacing: 63px;
+        }
+        @include viewport-lg{
+            font-size: 86px;
+        }
+        @include viewport-xl{
+            font-size: 96px;
+        }
+    }
+    
+}
+.quality{
+    padding: 30px 0 60px 0;
+    color: #000;
+    font-size: 19px;
+    line-height: 30px;
+    @include viewport-md{
+        padding-top: 60px;
+    }
+    &__info{
+        margin-bottom: 30px;
+        p:nth-child(1){
+            margin-bottom: 20px;
+        }
+        p:nth-child(2){
+            margin-bottom: 20px;
+        }
+        @include viewport-lg{
+            flex: 1 1 60%;
+        }
+        @include viewport-xl{
+            flex: 1 1 65%
+        }
+        @include viewport-xxl{
+            flex: 1 1 69%
+        }
+    }
+    &__tittle{
+        @include viewport-lg{
+            flex: 1 1 45%;
+        }
+        @include viewport-xl{
+            flex: 1 1 38%
+        }
+        @include viewport-xxl{
+            flex: 1 1 28%
+        }
+
+    }
+    &__tittle-subtittle{
+        @include subtitle;
+        @include main-gradient-text;
+
+    }
+    &__inner{
+        @include viewport-lg{
+            display: flex;
+            gap: 60px;
+        }
+        @include viewport-xl{
+            margin: 0 120px;
+        }
+    }
+}
+.achive{
+    position: relative;
+    padding: 30px 0 0;
+    background: $bg-color;
+    &__tittle{
+        font-size: 14px;
+        font-weight: 700;
+        color: $main-color;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
+    &__link{
+        margin: 0 auto;
+        padding: 25px 0;
+        background: $basic-white;
+        width: 255px;
+        border-radius: $radius-md;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        @include viewport-md{
+            width: 100%;
+        }
+    }
+    &__wrapper{
+
+
+    }
+}
+.achive .swiper-pagination{
+    margin-top: 30px;
+    position: static;
+}
+.achive .swiper-pagination-bullet{
+    width: 16px;
+    height: 16px;
+    background: $regular-color;
+}

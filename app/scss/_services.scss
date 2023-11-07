@@ -1,0 +1,166 @@
+.header__box-text--white{
+    color: $basic-white;
+}
+.commerce {
+    font-size: 19px;
+    color: $basic-white;
+    line-height: 30px;
+    padding: 30px 0 0;
+    @include viewport-xl{
+        margin: 0 120px;
+    }
+    @include viewport-xxl{
+        margin: 0 220px;
+    }
+
+
+    &__inner {
+        background: url('/images/card1.svg') no-repeat top;
+    }
+    &__support{
+        background: url('/images/card2.svg') no-repeat top;
+    }
+    &__judical{
+        background: url('/images/card6.svg') no-repeat top;
+    }
+    &__building{
+        background: url('/images/card4.svg') no-repeat top;
+    }
+    &__business{
+        background: url('/images/card5.svg') no-repeat top;
+    }
+    &__corporate{
+        background: url('/images/card3.svg') no-repeat top;
+    }
+
+
+    &__inner-tittle {
+        padding-top: 122px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+
+    &__inner-link {
+        text-decoration: none;
+        @include subtitle;
+        @include main-gradient-text;
+
+
+    }
+
+
+    &__inner-text {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+    &__inner-buttom {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+
+    &__inner-btn {
+        display: inline-block;
+        text-decoration: none;
+        color: $basic-white;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 18px 30px;
+        background: $regular-color;
+        border-radius: $radius-md;
+        transition: all .2s linear;
+        &:hover{
+            box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.50);
+        }
+    }
+    &__inner-line{
+        
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.50);
+        margin-top: 30px;
+    }
+}
+
+.wrapper{
+    margin-bottom: 80px;
+}
+
+
+.services {
+    padding: 30px 0 60px;
+    color: $basic-white;
+    font-size: 18px;
+    line-height: 26px;
+    @include viewport-xl{
+        margin: 0 120px;
+    }
+    @include viewport-xxl{
+        margin: 0 220px;
+    }
+
+
+    &__tittle {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        @include viewport-md{
+            display: flex;
+            gap: 60px;
+            flex-wrap: nowrap;
+        }
+    }
+
+
+    &__inner-info {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+
+    &__inner-text {
+        padding-left: 15px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 10px;
+            width: 6px;
+            height: 6px;
+            background: $accent-color;
+            border-radius: $radius-rounded;
+        }
+
+    }
+
+
+    &__inner-box {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+}
+.cards__service{
+    padding-top: 30px;
+    @include viewport-md{
+        padding-top: 0;
+    }
+}
+
+
+
+

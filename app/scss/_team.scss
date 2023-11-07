@@ -1,0 +1,131 @@
+.team {
+    position: relative;
+
+
+    &_wrapper {
+    }
+
+
+    &__swiper {
+        margin-bottom: 30px;
+    }
+
+
+    &__slide {
+        border-radius: $radius-md;
+        background: $bg-color;
+        overflow: hidden;
+        @include viewport-lg{
+            display: flex;
+        }
+    }
+
+    &__img {
+    height: 500px;
+    position: relative;
+
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @include viewport-lg{
+            flex: 0 0 400px;
+            height: auto;
+        }
+
+    }
+
+
+    &__inner {
+        padding: 30px;
+    }
+
+
+    &__inner-link {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+        color: $regular-color;
+        text-decoration: none;
+        padding-right: 12px;
+        margin-bottom: 5px;
+        position: relative;
+        transition: all .2s linear;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 4px;
+            right: 0;
+            display: block;
+            width: 9px;
+            height: 2px;
+            background: $regular-color;
+            transform: rotate(45deg);
+            transition: all .2s linear;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 9px;
+            right: 0;
+            display: block;
+            width: 9px;
+            height: 2px;
+            background: $regular-color;
+            transform: rotate(-45deg);
+            transition: all .2s linear;
+
+        }
+        &:hover{
+            &::before,
+            &::after {
+                background: $accent-color;
+
+            }
+        }
+    }
+    &__inner-link:hover{
+        color: $accent-color;
+    }
+
+
+
+    &__inner-tittle {
+        margin-bottom: 30px;
+        @include subtitle;
+        @include main-gradient-text;
+    }
+
+
+    &__inner-name {
+        p{
+            color: $text-color;
+            font-weight: 700;
+            font-size: 16px;
+        }
+        p + p{
+            line-height: 22px;
+            font-size: 14px;
+            font-weight: 400;
+            color: $text-color;
+        }
+    }
+}
+
+.team .swiper-pagination {
+    position: static;
+
+}
+.team .swiper-pagination-bullet{
+    width: 16px;
+    height: 16px;
+    background: $regular-color;
+}
+

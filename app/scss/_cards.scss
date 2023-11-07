@@ -1,0 +1,183 @@
+.wrapper{
+    position: relative;
+    border-radius: 0px 0px $radius-md $radius-md;
+    margin-bottom: 50px;
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        height: 10px;
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        background: #CACADB;
+        border-radius: 0px 0px $radius-md $radius-md;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        height: 10px;
+        width: calc(100% - 80px);
+        margin-left: 40px;
+        background: #E7E7F2;
+        border-radius: 0px 0px $radius-md $radius-md;
+    }
+}
+.cards {
+    color: $basic-white;
+    padding-bottom: 60px;
+
+
+    &__link-box {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        margin-bottom: 10px;
+        position: relative;
+        transition: all .2s ease;
+    }
+
+    &__link {
+        display: inline-block;
+        padding-right: 12px;
+        font-size: 14px;
+        font-weight: 700;
+        color: $regular-color;
+        text-decoration: none;
+        margin-bottom: 10px;
+        position: relative;
+        transition: all .2s linear;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 4px;
+            right: 0;
+            display: block;
+            width: 9px;
+            height: 2px;
+            background: $regular-color;
+            transform: rotate(45deg);
+            transition: all .2s linear;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 9px;
+            right: 0;
+            display: block;
+            width: 9px;
+            height: 2px;
+            background: $regular-color;
+            transform: rotate(-45deg);
+            transition: all .2s linear;
+        }
+        &:hover{
+            &::before,
+            &::after {
+                background: $accent-color;
+
+            }
+        }
+    }
+    &__link:hover{
+        color: $accent-color;
+    }
+
+
+    
+
+
+
+    &__tittle {
+        @include subtitle;
+        margin-bottom: 30px;
+        @include viewport-md{
+            margin-bottom: 60px;
+        }
+        
+        &.active{
+            @include main-gradient-text;
+        }
+    }
+
+
+    &__box {
+        @include viewport-md{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+        }
+    }
+
+
+    &__box-card {
+        margin-top: 30px;
+        padding-top: 122px;
+
+        background: url('/images/card1.svg') no-repeat;
+
+                    &:nth-child(2){
+                background: url('/images/card2.svg') no-repeat;
+        }
+                    &:nth-child(3){
+                background: url('/images/card3.svg') no-repeat;
+        }
+                    &:nth-child(4){
+                background: url('/images/card4.svg') no-repeat;
+        }
+                    &:nth-child(5){
+                background: url('/images/card5.svg') no-repeat;
+        }
+                    &:nth-child(6){
+                background: url('/images/card6.svg') no-repeat;
+        }
+
+
+
+
+
+
+        @include viewport-md{
+            flex: 1 1 40%;
+            margin: 0;
+        }
+        @include viewport-lg{
+            flex: 1 1 28%;
+        }
+        @include viewport-xl{
+            flex: 1 1 28%;
+        }
+        @include viewport-xxl{
+            flex: 1 1 28%;
+        }
+    }
+
+
+
+    &__subtittle {
+        margin-bottom: 15px;
+    }
+    &__subtittle-link{
+        @include cards__subtitle;
+        text-decoration: none;
+
+    }
+
+
+
+
+    &__box-text {
+        line-height: 26px;
+        font-size: 16px;
+    }
+}
+.cards__subtittle-link--accent{
+    transition: all .2s linear;
+    &:hover{
+        color: $accent-color;
+    }
+}
