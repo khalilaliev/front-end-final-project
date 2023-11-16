@@ -6,10 +6,9 @@
         content: '';
         position: absolute;
         bottom: -10px;
-        left: 0;
+        left: 20px;
+        right: 20px;
         height: 10px;
-        width: calc(100% - 40px);
-        margin-left: 20px;
         background: #CACADB;
         border-radius: 0px 0px $radius-md $radius-md;
     }
@@ -17,10 +16,9 @@
         content: '';
         position: absolute;
         bottom: -20px;
-        left: 0;
+        left: 40px;
+        right: 40px;
         height: 10px;
-        width: calc(100% - 80px);
-        margin-left: 40px;
         background: #E7E7F2;
         border-radius: 0px 0px $radius-md $radius-md;
     }

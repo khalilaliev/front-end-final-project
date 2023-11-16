@@ -1,0 +1,137 @@
+.gdpr {
+    padding: 30px 0;
+    @include viewport-md{
+        padding: 0;
+    }
+
+
+    &__inner {
+    }
+
+
+    &__box {
+    }
+
+
+    &__box-card {
+    }
+
+
+    &__box-link {
+    }
+
+
+    &__box-img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: $radius-md;
+        margin-bottom: 30px;
+        @include viewport-md{
+            min-height: 500px;
+        }
+    }
+
+
+    &__box-info {
+    }
+
+
+    &__box-subtittle {
+    }
+
+
+    &__box-tittle {
+        text-decoration: none;
+        color: $main-color;
+        font-size: 20px;
+        font-weight: 700;
+        transition: all .2s linear;
+        @include viewport-md{
+            font-size: 30px;
+        }
+
+
+    }
+
+
+    &__box-date {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $text-color;
+        margin: 15px 0;
+    }
+
+
+    &__box--inner {
+        border-top: 4px solid $separator-color;
+    }
+
+
+    &__box-text {
+        font-size: 16px;
+        line-height: 26px;
+        color: #000;
+        padding-top: 15px;
+    }
+}
+.info {
+    line-height: 26px;
+    font-size: 16px;
+
+
+    &__tittle {
+        @include subtitle;
+        @include main-gradient-text;
+        margin-bottom: 30px;
+    }
+
+
+    &__subtitle {
+        font-weight: 700;
+        color: $main-color;
+        margin-bottom: 15px;
+    }
+
+
+    &__list {
+        margin-bottom: 30px;
+    }
+
+
+    &__item {
+        padding-left: 45px;
+    }
+
+
+    &__text {
+        margin-bottom: 30px;
+    }
+
+
+    &__link {
+    }
+
+
+    &__link--img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    &__link--text {
+    }
+
+
+    &__description {
+    }
+
+
+    &__icons {
+    }
+}
+
+
