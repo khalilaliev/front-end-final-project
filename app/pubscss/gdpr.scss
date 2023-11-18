@@ -1,5 +1,5 @@
 .gdpr {
-    padding: 30px 0;
+    padding: 30px 0 60px;
     @include viewport-md{
         padding: 0;
     }
@@ -112,13 +112,19 @@
 
 
     &__link {
+        display: flex;
+        justify-content: center;
     }
 
 
     &__link--img {
         height: 200px;
-        width: 100%;
+        width: 315px;
         object-fit: cover;
+        @include viewport-md{
+            min-height: 400px;
+            min-width: 640px;
+        }
     }
 
 
@@ -127,10 +133,29 @@
 
 
     &__description {
+
+        
+    }
+    &__description--line{
+        padding-bottom: 30px;
+        border-bottom: 4px solid $separator-color;
+        margin-bottom: 30px;
+    }
+
+    &__box{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding-bottom: 60px;
     }
 
 
-    &__icons {
+    &__box--icons {
+        width: 44px;
+        height: 44px;
+        padding: 9px;
+        background: $bg-color;
+        border-radius: $radius-sm;
     }
 }
 

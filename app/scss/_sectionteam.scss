@@ -1,0 +1,120 @@
+
+.band {
+    padding: 30px 0 60px;
+    @include viewport-md{
+        padding-top: 0;
+    }
+
+
+    &__wrapper{
+        @include viewport-lg{
+            max-width: 664px;
+            margin: 0 auto;
+        }
+        @include viewport-xl{
+            max-width: 1080px;
+        }
+        @include viewport-xxl{
+            max-width: 1360px;
+        }
+    }
+
+
+    &__title {
+        @include subtitle;
+        @include main-gradient-text;
+        margin-bottom: 30px;
+        
+    }
+
+
+    &__inner {
+        @include viewport-md{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+        }
+
+    }
+
+
+    &__inner--box {
+        margin-bottom: 30px;
+        @include viewport-md{
+            flex: 1 1 45%;
+            margin-bottom: 0;
+        }
+        @include viewport-lg{
+            flex: 1 1 28%;
+        }
+    }
+
+    &__inner--link{
+        display: block;
+    }
+
+
+    &__inner--img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: $radius-md;
+        @include viewport-md{
+            height: 400px;
+        }
+    }
+
+
+    &__inner--info {
+        margin-top: 15px;
+    }
+
+
+    &__inner--name {
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: 700;
+        color: $main-color;
+        line-height: normal;
+    }
+
+    &__inner--position {
+        margin-top: 5px;
+        font-size: 14px;
+        line-height: 22px;
+        color: $text-color;
+    }
+
+    &__inner--span{
+        margin-top: 5px;
+        display: block;
+        width: 32px;
+        height: 32px;
+        background: $bg-color;
+        border-radius: $radius-rounded;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background: $regular-color;
+            height: 2px;
+            width: 10px;
+            top: 12px;
+            left: 12px;
+            transform: rotate(45deg);
+            transition: all .7s linear;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            background: $regular-color;
+            height: 2px;
+            width: 10px;
+            top: 18px;
+            left: 12px;
+            transform: rotate(-45deg);
+            transition: all .7s linear;
+        }
+    }
+}
+
