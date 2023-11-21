@@ -1,0 +1,181 @@
+.contact {
+    padding: 30px 0;
+    font-size: 21px;
+    line-height: 30px;
+    color: $main-color;
+    @include viewport-md{
+        padding: 0 0 60px;
+    }
+
+
+    &__inner {
+        display: flex;
+        gap: 60px;
+        @include viewport-xl{
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+        @include viewport-xxl{
+            max-width: 1360px;
+        }
+
+    }
+
+
+    &__info {
+        flex: 1 1 45%;
+    }
+
+
+    &__info--box {
+        padding-bottom: 30px;
+        border-bottom: 4px solid $separator-color;
+    }
+
+
+    &__info--adress {
+    }
+
+
+    &__info--content {
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 4px solid $separator-color;
+    }
+
+
+    &__info--number {
+        margin-bottom: 15px;
+    }
+
+
+    &__info--mail {
+        color: $regular-color;
+        text-decoration: none;
+    }
+
+
+    &__info--icon {
+        margin-top: 30px;
+        display: flex;
+        gap: 10px;
+        align-items: end;
+    }
+
+
+    &__info--svg {
+        width: 38px;
+        height: 38px;
+        fill: $regular-color;
+    }
+
+
+    &__info--text {
+        max-width: 110px;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $regular-color;
+    }
+
+
+
+    &__user {
+        padding: 30px;
+        background: $bg-color;
+        border-radius: $radius-md;
+        margin-top: 30px;
+        flex: 1 1 45%;
+        
+    }
+
+
+    &__form {
+    }
+
+
+    &__form--title {
+        @include subtitle;
+        @include main-gradient-text;
+        margin-bottom: 30px;
+    }
+
+
+    &__form--user {
+        background: $basic-white;
+        border: none;
+        border-radius: $radius-sm;
+        padding: 15px;
+        width: 100%;
+        margin-bottom: 15px;
+        color: $text-color;
+        font-family: 'Montserrat';
+    }
+
+
+    &__form--message {
+        background: $basic-white;
+        border: none;
+        border-radius: $radius-sm;
+        padding: 15px;
+        width: 100%;
+        min-height: 130px;
+        margin-bottom: 30px;
+        color: $text-color;
+        font-family: 'Montserrat';
+    }
+
+
+    &__form--subtitle {
+        margin-bottom: 15px;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $text-color;
+        
+    }
+    &input::placeholder{
+        font-size: 16px;
+        color: $text-color;
+    }
+
+
+    &__form--number {
+        background: $basic-white;
+        border: none;
+        border-radius: $radius-sm;
+        padding: 15px;
+        width: 100%;
+        margin-bottom: 15px;
+        color: $text-color;
+        font-family: 'Montserrat';
+    }
+
+    &__form--mail {
+        background: $basic-white;
+        border: none;
+        border-radius: $radius-sm;
+        padding: 15px;
+        width: 100%;
+        margin-bottom: 30px;
+        color: $text-color;
+        font-family: 'Montserrat';
+    }
+
+
+    &__form--button {
+        font-size: 16px;
+        font-weight: 700;
+        color: $basic-white;
+        text-align: center;
+        padding: 18px 0;
+        background: $regular-color;
+        width: 100%;
+        border-radius: $radius-md;
+    }
+}
+
+

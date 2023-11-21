@@ -64,28 +64,32 @@
         }
     }
 
-
-    &__inner--info {
+    &__box{
+        display: flex;
+        flex-wrap: wrap;
         margin-top: 15px;
     }
 
-
-    &__inner--name {
+    &__box--name {
         margin-top: 15px;
         font-size: 16px;
         font-weight: 700;
         color: $main-color;
         line-height: normal;
+        order: 1;
+        flex: 1 1 70%;
     }
 
-    &__inner--position {
+    &__box--position {
         margin-top: 5px;
         font-size: 14px;
         line-height: 22px;
         color: $text-color;
+        order: 3;
+        flex: 1 1 70%;
     }
 
-    &__inner--span{
+    &__box--span{
         margin-top: 5px;
         display: block;
         width: 32px;
@@ -93,6 +97,8 @@
         background: $bg-color;
         border-radius: $radius-rounded;
         position: relative;
+        order: 2;
+        cursor: pointer;
         &::before{
             content: '';
             position: absolute;
