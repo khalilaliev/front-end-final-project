@@ -131,8 +131,12 @@
         
         
     }
-    &__form--user input{
-        border: 1px solid black;
+    &__form--user:focus{
+        line-height: 26px;
+        font-size: 16px;
+        color: $basic-black;
+        outline: none;
+        border: 1px solid $regular-color;
     }
 
 
@@ -147,6 +151,13 @@
         color: $text-color;
         font-family: 'Montserrat';
         font-size: 16px;
+    }
+    &__form--message:focus{
+        line-height: 26px;
+        font-size: 16px;
+        color: $basic-black;
+        outline: none;
+        border: 1px solid $regular-color;
     }
 
 
@@ -176,6 +187,10 @@
         font-family: 'Montserrat';
         font-size: 16px;
     }
+    &__form--number:focus{
+        outline: none;
+        border: 1px solid $regular-color;
+    }
 
     &__form--mail {
         background: $basic-white;
@@ -187,6 +202,14 @@
         color: $text-color;
         font-family: 'Montserrat';
         font-size: 16px;
+    }
+
+    &__form--mail:focus{
+        line-height: 26px;
+        font-size: 16px;
+        color: $basic-black;
+        // outline: none;
+        border: 1px solid $regular-color;
     }
 
 
